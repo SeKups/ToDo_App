@@ -43,7 +43,7 @@ export default class App extends Component {
 
   onCreateUser = async (userParams) => {
     const user = await taskSrvc.registerUser(userParams)
-    debugger
+    
     if (typeof user === 'string') {
       this.setState({ isUserExist: !this.state.isUserExist })
     } else this.setState({ isRegisteredOrLogged: !this.state.isRegisteredOrLogged })
