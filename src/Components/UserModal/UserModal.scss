@@ -1,0 +1,25 @@
+.contentWrapper {
+  min-width: 300px;
+
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    background: #c8c8c8;
+    padding: 10px;
+    border-radius: 8px;
+    color: #a0a0a0;
+    border: 1px solid transparent;
+    transition: border 0.2s;
+    margin: 0;
+  }
+
+  .buttonsContainer {
+    margin-top: 20px;
+  }
+}
+

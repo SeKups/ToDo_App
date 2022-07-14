@@ -1,0 +1,140 @@
+.container {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 20px);
+
+  .signButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    margin: 0 10px;
+    color: #5e60ce;
+  }
+
+  .signButton:hover {
+    cursor: pointer;
+  }
+
+  .content {
+    width: 80%;
+    .userInput {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .addButton {
+        display: inline-block;
+        outline-width: 0;
+        float: left;
+        height: 39px;
+        width: 11%;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        line-height: 39px;
+        cursor: pointer;
+        margin: 0 20px;
+      }
+
+      .listInputNewTask {
+        width: 100%;
+        background: #eeeeee;
+        padding: 1rem;
+        border-radius: 8px;
+        color: #a0a0a0;
+        border: 1px solid transparent;
+        transition: border 0.2s;
+      }
+
+  }
+
+    .itemsContainer {
+      width: 100%;
+    }
+  }
+
+  .header {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .actionsButtons {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .spacer {
+        width: 0px;
+        height: 25px;
+        border: 1px solid #e3e2e2;
+      }
+
+      button {
+        border: none;
+        background: none;
+        margin: 0 10px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    }
+
+    .timer {
+      margin: 0 20px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.darkContainer {
+  background: #2f2f2f;
+
+  .content {
+
+    .sectionTitle {
+      color: #e3e2e2;
+    }
+    .userInput {
+      .listInputNewTask {
+        background: #525252;
+        color: #e3e2e2;
+      }
+
+      .addButton {
+        color: #e3e2e2;
+      }
+    }
+  }
+
+  .header {
+    .actionsButtons {
+      button {
+        color: #e3e2e2;
+      }
+
+      .spacer {
+        border: 1px solid #8c8c8c;
+      }
+
+      .timer {
+        color: #e3e2e2;
+      }
+    }
+  }
+}
